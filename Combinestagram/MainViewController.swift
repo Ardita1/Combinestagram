@@ -5,7 +5,7 @@ class MainViewController: UIViewController {
 
   private let bag = DisposeBag()
   private let images = Variable<[UIImage]>([])
-  private var imageCache = [Int]()
+  private var imagecache = [Int]()
 
   @IBOutlet weak var imagePreview: UIImageView!
   @IBOutlet weak var buttonClear: UIButton!
@@ -47,7 +47,7 @@ class MainViewController: UIViewController {
 
   @IBAction func actionClear() {
     images.value = []
-    imageCache = []
+    imagecache = []
     
   }
 
